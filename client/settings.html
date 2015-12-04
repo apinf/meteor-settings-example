@@ -1,0 +1,17 @@
+<head>
+  <title>Settings example</title>
+</head>
+
+<body>
+  <h1>Settings form:</h1>
+
+  {{> settings}}
+</body>
+
+<template name="settings">
+  {{#if dbSettingsExist}}
+  {{>quickForm collection="Settings" id="updateSettings" type="update" doc=settingsDoc}}
+  {{else}}
+  {{>quickForm collection="Settings" id="insertSettings" type="insert"}}
+  {{/if}}
+</template>
