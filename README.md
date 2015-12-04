@@ -1,4 +1,4 @@
-# settings-example
-Settings example
+# meteor-settings-example
 
+Meteor.settings example
 TODO: Add description to README.
